@@ -45,6 +45,7 @@ select {
 .page-container {
   display: flex;
   flex-wrap: wrap;
+  border: 1px solid blue
 }
 
 
@@ -54,12 +55,12 @@ select {
   display: flex;
   flex-direction: column;
   position: relative;
+  border: 1px solid yellow
 }
 
 .home-page__intro-banner {
   display: flex;
   position: relative;
-  border: 1px solid yellow;
 }
 
 .home-page__intro-banner .pm-header {
@@ -135,13 +136,13 @@ select {
 .home-page__intro-banner > #bg-path-2 {
   position: absolute;
   top: 0;
-  right: -14.5em;
-  width: 90%;
+  right: 0;
+  width: 70vw;
   height: 570px;
   background: transparent url('../img/bg-path-2.svg') 0% 0% no-repeat padding-box;
   mix-blend-mode: screen;
   opacity: 1;
-  background-size: 80%;
+  background-size: 100%;
 }
 
 .home-page__intro-banner > #bg-path-3 {
@@ -159,28 +160,149 @@ select {
 .page__intro-app {
   position: relative;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   margin-top: 5vw;
   z-index: 1;
-  border: 1px solid pink;
   width: 100%;
+  border: 1px solid pink;
 }
 
-.page__intro-app #img-bellhop-mobile {
+#img-bellhop-mobile {
   position: absolute;
-  top: 18.5em;
+  top: 17em;
   left: 12em;
+  height: 400px;
+  width: 300px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* background-image: url('../img/img-bellhop-desktop.png'); */
+  background-image: -webkit-image-set( url('../img/img-bellhop-mobile.png') 1x, url('../img/img-bellhop-mobile-2x.png') 2x );
+  border: 1px solid green;
+  
 }
 
-.page__intro-app #img-bellhop-ipad {
+#img-bellhop-ipad {
   position: absolute;
+  height: 400px;
   top: 18em;
-  right: 6em;
+  left: 46.5em;
+  width: 600px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* background-image: url('../img/img-bellhop-desktop.png'); */
+  background-image: -webkit-image-set( url('../img/img-bellhop-ipad.png') 1x, url('../img/img-bellhop-ipad-2x.png') 2x );
+  border: 1px solid green;
 }
 
-.page__intro-app #img-bellhop-desktop {
-  margin: 0 auto;
+#img-bellhop-desktop {
+  border: 1px solid green;
+  height: 650px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 55%;
+  /* background-image: url('../img/img-bellhop-desktop.png'); */
+  background-image: -webkit-image-set( url('../img/img-bellhop-desktop.png') 1x, url('../img/img-bellhop-desktop-2x.png') 2x );
+}
+
+@media only screen and (max-width: 767px) {
+  .home-page__intro-banner > #bg-path-1 {
+    width: 100%;
+  }
+
+  #img-bellhop-desktop {
+    background-image: url('../img/img-bellhop-desktop.png');
+    width: 900px;
+    background-size: contain;
+    height: 400px;
+  }
+
+  #img-bellhop-ipad {
+    width: 50%;
+  }
+}
+
+/* blurb */
+.home-page__blurb {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 1px solid yellow;
+  position: relative;
+}
+
+#shape-red-wave {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 35%;
+}
+
+#shapre-red-ellipse-sm {
+  position: absolute;
+  top: 4em;
+  right: -2em;
+  width: 80px;
+  height: 80px;
+}
+
+#shape-brown-ellipse {
+  position: absolute;
+  top: 5.5em;
+  left: -4em;
+  width: 320px;
+}
+
+.home-page__blurb-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  margin-top: 8vw;
+  margin-bottom: 8.5vw;
+}
+
+.home-page__blurb-content .title {
+  font-family: "Montserrat";
+  font-size: 1.5em;
+  color:#FDE4A8;
+}
+
+.home-page__blurb-content .description {
+  color: #FFFFFF;
+  font-size: 0.8em;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+  line-height: 14px;
+  text-align: center;
+}
+
+.home-page__blurb-content .button {
+  background-color: #fec90c;
+  border: none;
+  border-radius: 20px;
+  width: 100px;
+  font-size: 10px;
+  font-weight: bold;
+  color: #6F654C;
+  padding: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}
+
+
+@media only screen and (max-width: 767px) {
+  .home-page__blurb-content {
+    width: 100%;
+  }
+
+  .page__intro-app #img-bellhop-desktop {
+    margin: 0 auto;
+    width: 200px;
+  }
 }
 
 /* main header */
@@ -193,6 +315,7 @@ select {
     padding: 20px 5vw;
     background-color: #fff;
     box-shadow: 0px 3px 6px #0000000F;
+    border: 1px solid blue
   }
   
   .main-header__content {
