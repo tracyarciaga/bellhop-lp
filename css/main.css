@@ -58,15 +58,129 @@ select {
 
 .home-page__intro-banner {
   display: flex;
+  position: relative;
+  border: 1px solid yellow;
+}
+
+.home-page__intro-banner .pm-header {
+  position: absolute;
+  top: 3vw;
+  left: 21vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  z-index: 2;
+}
+
+.pm-header > img {
+  width: 85px;
+  height: 85px;
+}
+
+.home-page__intro-banner .tn-header {
+  position: absolute;
+  top: 23vw;
+  left: 10.5vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  z-index: 2;
+}
+
+.tn-header > img {
+  width: 85px;
+  height: 85px;
+}
+
+.home-page__intro-banner .pv-header {
+  position: absolute;
+  top: 23.5vw;
+  left: 77vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  z-index: 2;
+}
+
+.pv-header > img {
+  width: 85px;
+  height: 85px;
+}
+
+.intro-header-title--font {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 0.75em;
+}
+
+.intro-header-title--font .subtitle{
+  font-size: 0.6em;
+  font-weight: 100;
 }
 
 .home-page__intro-banner > #bg-path-1 {
+  position: absolute;
   width: 53%;
   height: 170px;
-  background-image: url('../img/bg-path-1.svg'), url('../img/bg-body.svg');
+  /* background-image: url('../img/bg-path-1.svg'), url('../img/bg-body.svg');
   background-repeat: no-repeat;
   background-blend-mode: screen;
+  background-size: 100%; */
+  background: transparent url('../img/bg-path-1.svg') 0% 0% no-repeat padding-box;
+  mix-blend-mode: screen;
+  opacity: 1;
+  background-size: 100%
+}
+
+.home-page__intro-banner > #bg-path-2 {
+  position: absolute;
+  top: 0;
+  right: -14.5em;
+  width: 90%;
+  height: 570px;
+  background: transparent url('../img/bg-path-2.svg') 0% 0% no-repeat padding-box;
+  mix-blend-mode: screen;
+  opacity: 1;
+  background-size: 80%;
+}
+
+.home-page__intro-banner > #bg-path-3 {
+  position: absolute;
+  margin: 0 auto;
+  top: -2em;
+  width: 100%;
+  height: 670px;
+  background: transparent url('../img/bg-path-3.svg') 0% 0% no-repeat padding-box;
+  mix-blend-mode: screen;
+  opacity: 1;
   background-size: 100%;
+}
+
+.page__intro-app {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 5vw;
+  z-index: 1;
+  border: 1px solid pink;
+  width: 100%;
+}
+
+.page__intro-app #img-bellhop-mobile {
+  position: absolute;
+  top: 18.5em;
+  left: 12em;
+}
+
+.page__intro-app #img-bellhop-ipad {
+  position: absolute;
+  top: 18em;
+  right: 6em;
+}
+
+.page__intro-app #img-bellhop-desktop {
+  margin: 0 auto;
 }
 
 /* main header */
@@ -377,7 +491,6 @@ select {
   display: flex;
   white-space: nowrap;
   justify-content: space-between;
-  color: #6F654C;
   flex-direction: column;
 }
 
