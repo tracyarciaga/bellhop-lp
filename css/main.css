@@ -45,7 +45,6 @@ select {
 .page-container {
   display: flex;
   flex-wrap: wrap;
-  border: 1px solid blue
 }
 
 
@@ -55,7 +54,6 @@ select {
   display: flex;
   flex-direction: column;
   position: relative;
-  border: 1px solid yellow
 }
 
 .home-page__intro-banner {
@@ -63,6 +61,40 @@ select {
   position: relative;
 }
 
+#shape-purple-ellipse {
+  position: absolute;
+  top: 43vw;
+  left: -3vw;
+  width: 100px;
+  height: 100px;
+  z-index: 1;
+}
+
+#shape-light-brw-ellipse-sm {
+  position: absolute;
+  top: 18vw;
+  left: 85vw;
+  width: 40px;
+  height: 40px;
+}
+
+#shape-light-brw-ellipse-sm2 {
+  position: absolute;
+  top: 14vw;
+  left: 16vw;
+  width: 28px;
+  height: 28px;
+}
+
+.home-page__intro-banner .app-download {
+  position: absolute;
+  top: 3vw;
+  left: 78vw;
+}
+
+.app-download > img {
+  width: 70%;
+}
 .home-page__intro-banner .pm-header {
   position: absolute;
   top: 3vw;
@@ -93,6 +125,10 @@ select {
   height: 85px;
 }
 
+.tn-header--mobile {
+  display: none
+}
+
 .home-page__intro-banner .pv-header {
   position: absolute;
   top: 23.5vw;
@@ -106,6 +142,10 @@ select {
 .pv-header > img {
   width: 85px;
   height: 85px;
+}
+
+.pv-header--mobile {
+  display: none;
 }
 
 .intro-header-title--font {
@@ -165,7 +205,6 @@ select {
   margin-top: 5vw;
   z-index: 1;
   width: 100%;
-  border: 1px solid pink;
 }
 
 #img-bellhop-mobile {
@@ -178,8 +217,6 @@ select {
   background-size: contain;
   /* background-image: url('../img/img-bellhop-desktop.png'); */
   background-image: -webkit-image-set( url('../img/img-bellhop-mobile.png') 1x, url('../img/img-bellhop-mobile-2x.png') 2x );
-  border: 1px solid green;
-  
 }
 
 #img-bellhop-ipad {
@@ -192,35 +229,125 @@ select {
   background-size: contain;
   /* background-image: url('../img/img-bellhop-desktop.png'); */
   background-image: -webkit-image-set( url('../img/img-bellhop-ipad.png') 1x, url('../img/img-bellhop-ipad-2x.png') 2x );
-  border: 1px solid green;
 }
 
 #img-bellhop-desktop {
-  border: 1px solid green;
   height: 650px;
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 55%;
+  background-size: 54%;
   /* background-image: url('../img/img-bellhop-desktop.png'); */
   background-image: -webkit-image-set( url('../img/img-bellhop-desktop.png') 1x, url('../img/img-bellhop-desktop-2x.png') 2x );
 }
 
 @media only screen and (max-width: 767px) {
+  #shape-light-brw-ellipse-sm2,
+  #shape-light-brw-ellipse-sm {
+    display: none;
+  }
+  #shape-purple-ellipse {
+    top: 175vw;
+    left: 60vw;
+    width: 60px;
+    height: 60px;
+  }
+
+  .home-page__intro-banner > #bg-path-1 {
+    height: 270px;
+    background-size: 200%
+  }
+
+  .home-page__intro-banner > #bg-path-2 {
+    width: 90vw;
+    height: 770px;
+    background-size: 200%;
+  }
+
+  .home-page__intro-banner > #bg-path-3 {
+    top: -2em;
+    width: 100%;
+    height: 670px;
+    background-size: 200%;
+  }
+
   .home-page__intro-banner > #bg-path-1 {
     width: 100%;
   }
 
   #img-bellhop-desktop {
-    background-image: url('../img/img-bellhop-desktop.png');
-    width: 900px;
     background-size: contain;
-    height: 400px;
+    width: 100%;
   }
 
   #img-bellhop-ipad {
-    width: 50%;
+    top: 20em;
+    left: 10em;
+    width: 55%;
+    height: 220px;
+    background-size: 120%;
+    padding: 0;
+    margin: 0;
   }
+
+  #img-bellhop-mobile {
+    position: absolute;
+    top: 20em;
+    left: 0;
+    height: 220px;
+    width: 110px; 
+  }
+
+  .home-page__intro-banner .pm-header {
+    top: 35vw;
+    left: 2vw;
+  }
+
+  .home-page__intro-banner .pv-header {
+    display: none;
+  }
+  .pv-header--mobile {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 19em;
+    left: 12.5em;
+    z-index: 2;
+  }
+  .pv-header--mobile  .img {
+    margin-bottom: 42vw;
+    padding-left: 100px
+  }
+
+  .pv-header--mobile  .img > img, 
+  .tn-header--mobile  .img > img,
+  .home-page__intro-banner .pm-header > img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .tn-header--mobile  .img {
+    margin-bottom: 42vw;
+  }
+
+  .subtitle{
+    font-size: 0.5em;
+    font-weight: 100;
+    color: white;
+  }
+
+  .home-page__intro-banner .tn-header {
+    display: none;
+  }
+  .tn-header--mobile {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 19em;
+    left: 1.5em;
+    z-index: 2;
+  }
+
 }
 
 /* blurb */
@@ -228,7 +355,6 @@ select {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  border: 1px solid yellow;
   position: relative;
 }
 
@@ -242,7 +368,14 @@ select {
 #shapre-red-ellipse-sm {
   position: absolute;
   top: 4em;
-  right: -2em;
+  right: 0;
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+}
+
+#shapre-red-ellipse-sm img {
+  margin-left: 30px;
   width: 80px;
   height: 80px;
 }
@@ -275,7 +408,7 @@ select {
   font-size: 0.8em;
   padding-top: 2vw;
   padding-bottom: 2vw;
-  line-height: 14px;
+  line-height: 16px;
   text-align: center;
 }
 
@@ -293,30 +426,40 @@ select {
   text-align: center;
 }
 
-
 @media only screen and (max-width: 767px) {
-  .home-page__blurb-content {
-    width: 100%;
-  }
 
-  .page__intro-app #img-bellhop-desktop {
-    margin: 0 auto;
+  .home-page__blurb-content {
+    width: 90%;
+    margin-top: 28vw;
+    margin-bottom: 18.5vw;
+  }
+  #shape-brown-ellipse {
+    top: 0;
+    left: -6em;
     width: 200px;
   }
+
+  .home-page__blurb-content .title { 
+    font-size: 1.2em;
+  }
+  .home-page__blurb-content .description {
+    font-size: 0.7em;
+    padding-bottom: 6vw;
+  }
+
 }
 
 /* main header */
 .main-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    width: 100%;
-    padding: 20px 5vw;
-    background-color: #fff;
-    box-shadow: 0px 3px 6px #0000000F;
-    border: 1px solid blue
-  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  padding: 20px 5vw;
+  background-color: #fff;
+  box-shadow: 0px 3px 6px #0000000F;
+}
   
   .main-header__content {
     display: flex;
