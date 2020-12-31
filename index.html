@@ -6,12 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Bellhop</title>
 
-<link rel="stylesheet" href="https://use.typekit.net/ndg3gzq.css">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/ndg3gzq.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;600&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
+  <link rel="stylesheet" href="css/video-swiper.css" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <script src="js/video-swiper.js"></script>
 </head>
 
 <body>
@@ -170,7 +179,7 @@
         <section class="home-page__blurb">
 
           <img id="shape-brown-ellipse" src='img/shape-brown-ellipse.svg' />
-          <div id="shapre-red-ellipse-sm" >
+          <div id="shape-red-ellipse-sm" >
             <img src='img/shapre-red-ellipse-sm.svg' />
           </div>
           <img id="shape-red-wave" src='img/shape-red-wave.svg' />
@@ -278,6 +287,172 @@
             </div>
           </div>
         </section>
+
+        <section id="testimonials" class="home-page__testimonials">
+          <figure id="shape-gray-waves">
+            <img src="img/shape-gray-waves.svg" />
+          </figure>
+
+          <div class="home-page__testimonials-card">
+            <p class="title">Property Type</p>
+            <p class="description">Single or multiple properties</p>
+            <div class="testimonials-strip-box ">
+              Residential
+            </div>
+            <div class="testimonials-strip-box ">
+              Commercial
+            </div>
+            <div class="testimonials-strip-box ">
+              Community Associations
+            </div>
+            
+          </div>
+          <div class="home-page__testimonials-videos">
+            
+            <p class="title">User Testimonials</p>
+            <p class="description">Let’s hear it from them.</p>
+            
+            <!-- Slider main container -->
+            <div class="swiper-container">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide video">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/jsPCz4gRCOI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                ...
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+
+              <!-- If we need scrollbar -->
+              <div class="swiper-scrollbar"></div>
+            </div>
+            <span class="testimonials-socials">
+              <span>
+                Bellhop socials:
+              </span>
+              <span class="testimonials-socials--yellow">
+                <img src="img/icon-footer-fb.svg" /> Bellhopapps
+              </span>
+              <span class="testimonials-socials--yellow">
+                <img src="img/icon-footer-ig.svg" /> Bellhopapps
+              </span>
+              <span class="testimonials-socials--yellow">
+                <img src="img/icon-footer-linkedin.svg" /> Bellhopapps
+              </span>
+            </span>
+          </div>
+        </section>  
+
+        <section id="contact-us" class="home-page__contact-us">
+          <div class="home-page__contact-us-blurb">
+            <p class="title">
+              Let’s upgrade your property management processes today.
+            </p>
+            <span class="description">
+              <p>You deserve this. Book a demo now. </p> 
+            </span>
+            <img id="ellipse-bg-girl" src="img/shape-orange-ellipse.svg" />
+            <img id="img-girl" src="img/img-girl.svg" />
+            <img id="img-guy" src="img/img-guy.svg" />
+            <img id="ellipse-bg-guy" src='img/shape-brown-ellipse.svg' />
+
+          </div>
+          <div class="home-page__contact-us-form">
+            <p class="form-header">BOOK A DEMO</p>
+            <div class='form-row'>
+              <label for='full-name'>Name</label>
+              <input id='full-name'
+                name='full-name'
+                type='text'/>
+            </div>
+            <div class='form-row'>
+              <label for='full-name'>Mobile Number</label>
+              <input id='full-name' 
+                name='full-name' 
+                type='text'/>
+            </div>
+            <div class='form-row'>
+              <label for='full-name'>Email Address</label>
+              <input id='full-name'
+                name='full-name' 
+                type='text'/>
+            </div>
+
+            <div class='form-row'>
+              <ul>
+                <li>
+                  <label class='checkbox-label' for='available'>
+                    <input id='admin'
+                           name='admin'
+                           type='checkbox'
+                           value='is-admin'/>
+                    <span>Property Admin/ Building Owner</span>
+                    </label>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <label class='checkbox-label' for='available'>
+                    <input id='tenant'
+                           name='tenant'
+                           type='checkbox'
+                           value='is-tenant'/>
+                    <span>Tenant</span>
+                    </label>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <label class='checkbox-label' for='available'>
+                    <input id='provider'
+                           name='provider'
+                           type='checkbox'
+                           value='is-provider'/>
+                    <span>Service Provider</span>
+                    </label>
+                </li>
+              </ul>
+              <div class="form-row">
+                <button class="button"> Submit </button>
+              </div>
+              
+            </div>
+          
+          </div>
+        </section>
+
+        <section id="pricing" class="home-page__pricing">
+          <div class="home-page__pricing-banner">
+            <figure id="img-desktop-pricing" >
+              <img src='img/img-desktop-pricing.png' />
+            </figure>
+            <figure id="img-ipad-pricing" >
+              <img src='img/img-ipad-pricing-2x.png' />
+            </figure>
+          </div>
+          <div class="home-page__pricing-card">
+            <p class="title">Property Type</p>
+            <p class="description">Single or multiple properties</p>
+            <div class="testimonials-strip-box ">
+              Residential
+            </div>
+            <div class="testimonials-strip-box ">
+              Commercial
+            </div>
+            <div class="testimonials-strip-box ">
+              Community Associations
+            </div>
+            
+          </div>
+        </section>  
       </main>
 
 
@@ -366,4 +541,5 @@
       </nav>
     </div>
 </body>
+
 </html>
