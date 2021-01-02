@@ -47,7 +47,30 @@ select {
   flex-wrap: wrap;
 }
 
+#shape-red-orange-ellipse {
+  position: absolute;
+  top: 545vh;
+  left: -4vw;
+  overflow: hidden;
+  z-index: 10;
+}
 
+#shape-red-orange-ellipse > img {
+  width: 120px;
+}
+
+#shape-red-gradient-ellipse  {
+  position: absolute;
+  top: 360vh;
+  right: 0;
+  overflow: hidden;
+  z-index: 10;
+}
+
+#shape-red-gradient-ellipse > img {
+  width: 200px;
+  margin-right: -100px;
+}
 /* intro */
 
 .home-page__intro {
@@ -211,8 +234,8 @@ select {
   width: 300px;
   background-repeat: no-repeat;
   background-size: contain;
-  /* background-image: url('../img/img-bellhop-desktop.png'); */
-  background-image: -webkit-image-set( url('../img/img-bellhop-mobile.png') 1x, url('../img/img-bellhop-mobile-2x.png') 2x );
+  background-image: url('../img/img-bellhop-mobile.png');
+  /* background-image: -webkit-image-set( url('../img/img-bellhop-mobile.png') 1x, url('../img/img-bellhop-mobile-2x.png') 2x ); */
 }
 
 #img-bellhop-ipad {
@@ -223,8 +246,7 @@ select {
   width: 600px;
   background-repeat: no-repeat;
   background-size: contain;
-  /* background-image: url('../img/img-bellhop-desktop.png'); */
-  background-image: -webkit-image-set( url('../img/img-bellhop-ipad.png') 1x, url('../img/img-bellhop-ipad-2x.png') 2x );
+  background-image: url('../img/img-bellhop-ipad.png'); 
 }
 
 #img-bellhop-desktop {
@@ -233,11 +255,12 @@ select {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 54%;
-  /* background-image: url('../img/img-bellhop-desktop.png'); */
-  background-image: -webkit-image-set( url('../img/img-bellhop-desktop.png') 1x, url('../img/img-bellhop-desktop-2x.png') 2x );
+  background-image: url('../img/img-bellhop-desktop.png');
+  /* background-image: -webkit-image-set( url('../img/img-bellhop-desktop.png') 1x, url('../img/img-bellhop-desktop-2x.png') 2x ); */
 }
 
 @media only screen and (max-width: 767px) {
+  #shape-red-gradient-ellipse,
   #shape-light-brw-ellipse-sm2,
   #shape-light-brw-ellipse-sm {
     display: none;
@@ -363,15 +386,14 @@ select {
 
 #shape-red-ellipse-sm {
   position: absolute;
-  top: 4em;
-  right: 0;
+  top: 14vh;
+  right: 8vw;
   width: 80px;
   height: 80px;
   overflow: hidden;
 }
 
 #shape-red-ellipse-sm img {
-  margin-left: 30px;
   width: 80px;
   height: 80px;
 }
@@ -422,8 +444,32 @@ select {
   text-align: center;
 }
 
+/* iPad Pro Portrait */
+@media only screen and (min-device-width: 1024px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait)  {
+  #img-bellhop-ipad {
+    top: 20em;
+    left: 32em;
+    width: 40%;
+    background-size: 100;
+    padding: 0;
+    margin: 0;
+  }
+
+  #img-bellhop-mobile {
+    position: absolute;
+    top: 20em;
+    left: 10em;
+    height: 290px;
+    width: 180px; 
+  }
+}
+
+
 @media only screen and (max-width: 767px) {
 
+  #shape-red-ellipse-sm {
+    display: none;
+  }
   .home-page__blurb-content {
     width: 90%;
     margin-top: 28vw;
@@ -537,7 +583,25 @@ select {
   word-wrap: break-word;
 }
 
+/* iPad Pro Portrait */
+@media only screen and (min-device-width: 1024px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait)  {
+  #img-property-manager,
+  #img-tenants,
+  #img-svc-providers {
+    width: 220px;
+    z-index: 1;
+  }
+}
+
 @media only screen and (max-width: 767px) {
+  .home-page__features-blurb .title {
+    font-size: 1.5em;
+  }
+
+  .box--white .title {
+    font-size: 1em;
+  }
+
   .home-page__features-blurb {
     margin-top: 10vw;
   }
@@ -594,6 +658,9 @@ select {
   flex-direction: column;
 }
 
+.home-page__property-types-blurb img {
+  width: 700px;
+}
 .home-page__property-types-blurb .title {
   font-family: "Montserrat";
   font-size: 2em;
@@ -637,6 +704,25 @@ select {
 #img-bldg {
   z-index: 1;
   width: 400px;
+}
+
+/* iPad Pro Portrait */
+@media only screen and (min-device-width: 1024px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait)  {
+  .home-page__property-types-blurb img {
+    width: 500px;
+  }
+  #shape-gray-semi-ellipse > img {
+    width: 1024px;
+  }
+  #img-bldg {
+    z-index: 1;
+    width: 300px;
+  }
+  #shape-light-yw-ellipse {
+    width: 280px;
+    height: 280px;
+
+  }
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1419px) {
@@ -695,18 +781,20 @@ select {
   .home-page__property-types-blurb .title {
     margin-top: 8vw;
     margin-bottom: 4vw;
+    font-size: 1.5em;
   }
   .home-page__property-types-blurb .description {
-    width: 100%;
+    width: 80%;
     margin-bottom: 10vw;
   }
   #shape-gray-semi-ellipse {
     left: -25em;
-    width: 850px;
+    width: 863.5px;
   }
 }
 
 /*  testimonials */
+
 
 .home-page__testimonials {
   display: flex;
@@ -793,9 +881,111 @@ select {
   top: 100vh;
 }
 
+#shape-blue-ellipse {
+  position: absolute; 
+  left: 0;
+  bottom: -6vh;
+  width: 100px;
+}
+
+#shape-yellow-orange-ellipse {
+  position: absolute; 
+  right: 2vw;
+  top: 24vh;
+  width: 60px;
+}
+
+/* iPad Pro Portrait */
+@media only screen and (min-device-width: 1024px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait)  {
+  .home-page__testimonials {
+    display: flex;
+    flex-direction: row;
+    padding-top: 10vh;
+    padding-bottom: 8vh;
+  }
+  .home-page__testimonials-card {
+    width: 40%;
+  }
+  .home-page__testimonials-videos {
+    margin-left: 5vw;
+    width: 60%
+  }
+  .testimonials-socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #shape-yellow-orange-ellipse {
+    position: absolute; 
+    right: 3vw;
+    top: 8vh;
+    width: 60px;
+  }
+
+  #shape-blue-ellipse {
+    bottom: -4vh;
+    width: 100px;
+  }
+
+  #shape-gray-waves {
+    position: absolute; 
+    top: 20vh;
+    bottom: 0;
+    left: -6vw;
+    width: 60%;
+    overflow: hidden;
+  }
+
+  #shape-red-gradient-ellipse  {
+    position: absolute;
+    top: 175vh;
+    right: 0;
+    overflow: hidden;
+    z-index: 10;
+  }
+
+  #shape-red-gradient-ellipse > img {
+    width: 180px;
+    margin-right: -100px;
+  }
+}
+
 @media only screen and (max-width: 767px) {
+  #shape-red-orange-ellipse {
+    position: absolute;
+    top: 490vh;
+    left: 74vw;
+    overflow: hidden;
+    z-index: 10;
+  }
+
+  #shape-yellow-orange-ellipse { 
+    left: -1.8vh;
+    top: 65vh;
+    z-index: 2;
+    width: 55px;
+  }
+  
+  #shape-red-orange-ellipse > img {
+    width: 100px;
+  }
+  .testimonials-strip-box {
+    font-size: 0.85em;
+  }
+
+  #shape-blue-ellipse {
+    display: none;
+  }
   #shape-gray-waves {
     display: none;
+  }
+  .home-page__testimonials .title {
+    margin-top: 5vh;
+    font-size: 1.5em;
+  }
+  .home-page__testimonials {
+    padding-top: 10vh;
   }
 }
 @media only screen and (min-width: 1420px) {
@@ -804,7 +994,7 @@ select {
     flex-direction: row;
   }
   .home-page__testimonials-card {
-    width: 40%
+    width: 40%;
   }
   .home-page__testimonials-videos {
     margin-left: 5vw;
@@ -959,25 +1149,23 @@ select {
 
   #img-girl {
     position: absolute;
-    top: 40vh;
+    top: 45vh;
     left:12vw;
     width: 100px;
   }
-  
+ 
   #img-guy {
     position: absolute;
     top: 51vh;
     left: 26.5vh;
     width: 200px;
   }
-  
   #ellipse-bg-girl {
     position: absolute;
-    top: 35vh;
+    top: 40vh;
     left:4vw;
     width: 130px;
   }
-  
   #ellipse-bg-guy {
     position: absolute;
     top: 48vh;
@@ -993,6 +1181,50 @@ select {
     width: 250px;
   }
 
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait)  {
+  .home-page__contact-us {
+    flex-direction: row;
+  }
+  .home-page__contact-us-blurb { 
+    width: 60%;
+  }
+  .home-page__contact-us-form {
+    width: 40%;
+  }
+  .form-row input[type='text'], .form-row textarea {
+    width: 250px;
+  }
+  .home-page__contact-us-form { 
+    padding: 5vh;
+  }
+
+  #img-girl {
+    position: absolute;
+    top: 24.5vh;
+    left:10vw;
+    width: 100px;
+  }
+  #ellipse-bg-girl {
+    position: absolute;
+    top: 22vh;
+    left:6vw;
+    width: 130px;
+  }
+  #img-guy {
+    position: absolute;
+    top: 24vh;
+    left: 26.5vh;
+    width: 200px;
+  }
+  
+  #ellipse-bg-guy {
+    position: absolute;
+    top: 22.38vh;
+    left: 25.58vh;
+    width: 220.5px;
+  }
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1419px) {
@@ -1072,7 +1304,7 @@ select {
 #img-ipad-pricing {
   position: absolute;
   bottom: 0;
-  right: 20vw;
+  right: 18vw;
   top: 35vh;
   overflow: hidden;
 }
@@ -1081,7 +1313,93 @@ select {
   width: 380px;
 }
 
+#shape-orange-gradient-ellipse-md {
+  position: absolute;
+  bottom: 30vh;
+  left: 54vw;
+  width: 230px;
+  height: 230px;
+}
+
+#shape-gray-semi-ellipse-up {
+  position: absolute;
+  top: 0;
+  left:0;
+  overflow: hidden;
+  width: 100%;
+  opacity: 0.7;
+}
+
+#shape-gray-semi-ellipse-up > img {
+  width: 1420px;
+}
+
+#bg-waves-demo {
+  position: absolute; 
+  right: 0;
+  top: 0;
+  width: 50%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+/* iPad Pro Portrait */
+@media only screen and (min-device-width: 1024px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait)  {
+  .home-page__pricing {
+    flex-direction: row;
+  }
+  .home-page__pricing-card {
+    width: 40%;
+    order: 1
+  }
+  .home-page__pricing-banner { 
+    width: 60%;
+    order: 2;
+  }
+
+  #img-desktop-pricing img {
+    width: 650px;
+  }
+  
+  #img-ipad-pricing {
+    bottom: 0;
+    right: 16vw;
+    top: 18vh;
+  }
+  #img-ipad-pricing img {
+    width: 350px;
+  }
+  #shape-orange-gradient-ellipse-md {
+    position: absolute;
+    bottom: 20vh;
+    left: 54vw;
+  }
+  #shape-gray-semi-ellipse-up > img {
+    width: 1024px;
+  }
+  #shape-red-orange-ellipse {
+    position: absolute;
+    top: 275vh;
+    left: -5vw;
+    overflow: hidden;
+    z-index: 10;
+  }
+}
+
 @media only screen and (max-width: 767px) {
+  #bg-waves-demo {
+    width: 70%;
+  }
+  #shape-gray-semi-ellipse-up {
+    left: -50vw;
+    width: 150%;
+  }
+  #shape-orange-gradient-ellipse-md { 
+    bottom: 60vh;
+    left: 6vw;
+    width: 200px;
+    height: 200px;
+  }
   .home-page__pricing-banner {
 
     height: 300px;
@@ -1111,6 +1429,11 @@ select {
     width: 200px;
   }
 
+  .home-page__pricing .title {
+    font-size: 1.5em;
+  }
+  
+
 }
 
 @media only screen and (min-width: 1420px) {
@@ -1126,6 +1449,8 @@ select {
     order: 2;
   }
 }
+
+
 /* main header */
 .main-header {
   position: fixed;
@@ -1246,9 +1571,20 @@ select {
     /* background-color: #F09A9D; */
   }
   
+  /* iPad Pro Portrait */
+  @media only screen and (min-device-width: 1024px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait)  {
+    .main-header__signup--only-desktop {
+      display: none;
+    }
+  }
   @media only screen and (min-width: 768px) {
     .main-header__signup {
       margin-left: 30px;
+    }
+    .main-header__signup > ul > li {
+      width: 20%;
+      max-width: 8rem;
+      height: 2.5rem;
     }
   }
   @media only screen and (min-width: 1024px) and (max-width: 1419px) {
@@ -1414,6 +1750,7 @@ select {
   
   .main-content {
     width: 100%;
+    position: relative;
     /* margin: 55px 0 7rem 0; */
   }
   @media only screen and (min-width: 1024px) {
@@ -1598,7 +1935,7 @@ select {
   display: none;
 }
 
-#sns-nav > ul {
+#sns-nav > div {
   display: flex;
   flex-direction: column;
   padding: 0;
