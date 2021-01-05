@@ -791,6 +791,9 @@ select {
     left: -25em;
     width: 863.5px;
   }
+  .home-page__property-types-blurb img {
+    width: 400px;
+  }
 }
 
 /*  testimonials */
