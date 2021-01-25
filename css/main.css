@@ -1183,14 +1183,14 @@ and (max-width: 1419px) {
   
     #shape-yellow-orange-ellipse {
       position: absolute; 
-      right: 3vw;
-      top: 8vh;
-      width: 60px;
+      right: 1vw;
+      top: 16vh;
+      width: 30px;
     }
   
     #shape-blue-ellipse {
       bottom: -4vh;
-      width: 100px;
+      width: 80px;
     }
   
     #shape-gray-waves {
@@ -1204,15 +1204,27 @@ and (max-width: 1419px) {
   
     #shape-red-gradient-ellipse  {
       position: absolute;
-      top: 175vh;
+      top: 185vh;
       right: 0;
       overflow: hidden;
       z-index: 10;
     }
   
     #shape-red-gradient-ellipse > img {
-      width: 180px;
+      width: 170px;
       margin-right: -100px;
+    }
+
+    .home-page__testimonials .title {
+      font-size: 1.5em;
+    }
+    
+    .home-page__testimonials .description {
+      font-size: 0.6em;
+    }
+
+    .testimonials-strip-box {
+      font-size: 0.8em;
     }
 
 }
@@ -1329,7 +1341,7 @@ and (max-width: 1419px) {
   }
 }
 
-/* property-types */
+/* contact us */
 
 .home-page__contact-us {
   display: flex;
@@ -1505,6 +1517,71 @@ and (max-width: 1419px) {
 
 }
 
+/* ----------- iPad Pro 10.5" ----------- */
+/* Portrait */
+@media only screen 
+  and (min-device-width: 834px) 
+  and (max-device-width: 834px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .home-page__contact-us {
+      flex-direction: row;
+    }
+    .home-page__contact-us-blurb { 
+      width: 55%;
+    }
+    .home-page__contact-us-form {
+      width: 45%;
+    }
+    .home-page__contact-us-blurb .title {
+      font-size: 1.5em;
+      width: 80%;
+    }
+    .home-page__contact-us-blurb .description {
+      font-size: 0.6em;
+      width: 80%;
+    }
+    .home-page__contact-us-form {
+      padding: 3vh;
+    }
+    .form-header {
+      font-size: 0.8em;
+    }
+    .form-row input[type='text'], .form-row textarea   {
+      width: 270px;
+      font-size: 12px;
+    }
+
+    #img-girl {
+      position: absolute;
+      bottom: 13.5vh;
+      left:10.5vw;
+      width: 100px;
+    }
+    
+    #img-guy {
+      position: absolute;
+      top: 18vh;
+      left: 18vh;
+      width: 200px;
+      z-index: 1
+    }
+    
+    #ellipse-bg-girl {
+      position: absolute;
+      bottom: 18.5vh;
+      left: 8vw;
+      width: 110px;
+    }
+    
+    #ellipse-bg-guy {
+      position: absolute;
+      top: 18vh;
+      left: 18vh;
+      width: 200px;
+    }
+}
+
+
 @media only screen and (min-device-width: 1024px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait)  {
   .home-page__contact-us {
     flex-direction: row;
@@ -1665,6 +1742,63 @@ and (max-width: 1419px) {
   z-index: -1;
 }
 
+/* ----------- iPad Pro 10.5" ----------- */
+/* Portrait */
+@media only screen 
+  and (min-device-width: 834px) 
+  and (max-device-width: 834px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    #shape-gray-semi-ellipse-up {
+      left: 0vw;
+      width: 100%;
+    }
+    #shape-orange-gradient-ellipse-md { 
+      bottom: 15vh;
+      left: 43.5vw;
+      width: 180px;
+      height: 180px;
+    }
+    .home-page__pricing {
+      flex-direction: row;
+    }
+    .home-page__pricing-card {
+      width: 40%;
+      order: 1
+    }
+    .home-page__pricing-banner { 
+      width: 60%;
+      order: 2;
+    }
+
+    #img-desktop-pricing {
+      left: 55vw;
+    }
+    
+    #img-desktop-pricing img {
+      width: 600px;
+    }
+
+    #img-ipad-pricing {
+      top: 25vh;
+    }
+
+    #img-ipad-pricing img {
+      width: 300px;
+    }
+    
+    #shape-red-orange-ellipse {
+      position: absolute;
+      top: 295vh;
+      left: -6vw;
+      overflow: hidden;
+      z-index: 10;
+    }
+
+    #shape-red-orange-ellipse > img {
+      width: 100px;
+    }
+}
+
 /* iPad Pro Portrait */
 @media only screen and (min-device-width: 1024px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait)  {
   .home-page__pricing {
@@ -1723,7 +1857,6 @@ and (max-width: 1419px) {
     height: 200px;
   }
   .home-page__pricing-banner {
-
     height: 300px;
   }
   #img-desktop-pricing {
@@ -1823,7 +1956,7 @@ and (max-width: 1419px) {
     justify-content: flex-start;
     /* background-color: #F5CF8E; */
   }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 835px) {
     .main-header__menu {
       display: block;
     }
@@ -1966,7 +2099,7 @@ and (max-width: 1419px) {
   #mb-nav-wrp {
     display: none;
   }
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: 834px) {
     #mb-nav-wrp {
       display: block;
     }
