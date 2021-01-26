@@ -23,7 +23,7 @@ ul {
   list-style-type: none;
 }
 body {
-  font-family: "Acumin Pro", sans-serif;
+  font-family: "acumin-pro";
   font-size: 100%;
   color: #1f1f1f;
   background-color: #1F1E1C;
@@ -448,7 +448,8 @@ select {
 /* Portrait */
 @media only screen 
   and (min-device-width: 834px) 
-  and (max-device-width: 834px)
+  and (max-device-height: 1112px) 
+  and (orientation: portrait)
   and (-webkit-min-device-pixel-ratio: 2) {
     #img-bellhop-ipad {
       top: 20em;
@@ -538,8 +539,8 @@ select {
 /* ----------- iPad Pro 10.5" ----------- */
 /* Landscape */
 @media only screen 
-  and (min-device-width: 1112px) 
-  and (max-device-width: 1112px) 
+  and (min-device-width: 834px) 
+  and (max-device-height: 1112px) 
   and (orientation: landscape) 
   and (-webkit-min-device-pixel-ratio: 2) {
     #img-bellhop-ipad {
@@ -739,7 +740,7 @@ select {
 /* Portrait */
 @media only screen 
   and (min-device-width: 834px) 
-  and (max-device-width: 834px)
+  and (max-device-height: 1112px) 
   and (orientation: portrait) 
   and (-webkit-min-device-pixel-ratio: 2) {
 
@@ -783,8 +784,8 @@ select {
 /* ----------- iPad Pro 10.5" ----------- */
 /* Landscape */
 @media only screen 
-  and (min-device-width: 1112px) 
-  and (max-device-width: 1112px) 
+  and (min-device-width: 834px) 
+  and (max-device-height: 1112px) 
   and (orientation: landscape) 
   and (-webkit-min-device-pixel-ratio: 2) {
 
@@ -944,7 +945,7 @@ select {
 /* Portrait */
 @media only screen 
   and (min-device-width: 834px) 
-  and (max-device-width: 834px)
+  and (max-device-height: 1112px) 
   and (orientation: portrait) 
   and (-webkit-min-device-pixel-ratio: 2) {
     .home-page__property-types {
@@ -1001,8 +1002,8 @@ select {
 /* ----------- iPad Pro 10.5" ----------- */
 /* Landscape */
 @media only screen 
-  and (min-device-width: 1112px) 
-  and (max-device-width: 1112px) 
+  and (min-device-width: 834px) 
+  and (max-device-height: 1112px) 
   and (orientation: landscape) 
   and (-webkit-min-device-pixel-ratio: 2) {
 
@@ -1259,7 +1260,7 @@ and (max-width: 1419px) {
 /* Portrait */
 @media only screen 
   and (min-device-width: 834px) 
-  and (max-device-width: 834px)
+  and (max-device-height: 1112px) 
   and (orientation: portrait) 
   and (-webkit-min-device-pixel-ratio: 2) {
     .home-page__testimonials {
@@ -1332,8 +1333,8 @@ and (max-width: 1419px) {
 /* ----------- iPad Pro 10.5" ----------- */
 /* Landscape */
 @media only screen 
-  and (min-device-width: 1112px) 
-  and (max-device-width: 1112px) 
+  and (min-device-width: 834px) 
+  and (max-device-height: 1112px) 
   and (orientation: landscape) 
   and (-webkit-min-device-pixel-ratio: 2) {
     .home-page__testimonials {
@@ -1687,7 +1688,8 @@ and (max-width: 1419px) {
 /* Portrait */
 @media only screen 
   and (min-device-width: 834px) 
-  and (max-device-width: 834px)
+  and (max-device-height: 1112px) 
+  and (orientation: portrait) 
   and (-webkit-min-device-pixel-ratio: 2) {
     .home-page__contact-us {
       flex-direction: row;
@@ -1751,8 +1753,8 @@ and (max-width: 1419px) {
 /* ----------- iPad Pro 10.5" ----------- */
 /* Landscape */
 @media only screen 
-  and (min-device-width: 1112px) 
-  and (max-device-width: 1112px) 
+  and (min-device-width: 834px) 
+  and (max-device-height: 1112px) 
   and (orientation: landscape) 
   and (-webkit-min-device-pixel-ratio: 2) {
     .home-page__contact-us {
@@ -1976,7 +1978,7 @@ and (max-width: 1419px) {
 /* Portrait */
 @media only screen 
   and (min-device-width: 834px) 
-  and (max-device-width: 834px)
+  and (max-device-height: 1112px) 
   and (orientation: portrait) 
   and (-webkit-min-device-pixel-ratio: 2) {
     #shape-gray-semi-ellipse-up {
@@ -2033,8 +2035,8 @@ and (max-width: 1419px) {
 /* ----------- iPad Pro 10.5" ----------- */
 /* Landscape */
 @media only screen 
-  and (min-device-width: 1112px) 
-  and (max-device-width: 1112px) 
+  and (min-device-width: 834px) 
+  and (max-device-height: 1112px) 
   and (orientation: landscape) 
   and (-webkit-min-device-pixel-ratio: 2) {
     #shape-gray-semi-ellipse-up {
@@ -2374,8 +2376,8 @@ and (max-width: 1419px) {
   /* ----------- iPad Pro 10.5" ----------- */
 /* Landscape */
   @media only screen 
-  and (min-device-width: 1112px) 
-  and (max-device-width: 1112px) 
+  and (min-device-width: 834px) 
+  and (max-device-height: 1112px) 
   and (orientation: landscape) 
   and (-webkit-min-device-pixel-ratio: 2) {
     .main-header__signup-icon {
@@ -2505,7 +2507,7 @@ and (max-width: 1419px) {
     position: relative;
     /* margin: 55px 0 7rem 0; */
   }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 1420px) {
     .main-content {
       margin-top: 89px;
     }
