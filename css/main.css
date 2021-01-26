@@ -593,6 +593,24 @@ select {
     #shape-brown-ellipse {
       width: 220px;
     }
+
+    .home-page__intro-banner .app-download {
+      top: 13vw;
+    }
+
+    .app-download > img {
+      width: 60%;
+    }
+
+    #shape-light-brw-ellipse-sm {
+      top: 26vw;
+      left: 87vw;
+    }
+
+    #shape-light-brw-ellipse-sm2 {
+      top: 24vw;
+      left: 16vw;
+    }
 }
 
 
