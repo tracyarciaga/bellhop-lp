@@ -430,7 +430,7 @@ select {
   }
 
   .home-page__intro-banner .pm-header {
-    top: 35vw;
+    top: 11.5vh;
     left: 2vw;
   }
 
@@ -443,7 +443,7 @@ select {
     position: absolute;
     justify-content: flex-end;
     top: 19em;
-    left: 58%;
+    left: 65%;
     z-index: 2;
   }
   .pv-header--mobile  .img {
@@ -619,6 +619,10 @@ select {
   .home-page__blurb-content .description {
     font-size: 0.7em;
     padding-bottom: 6vw;
+  }
+  #shape-purple-ellipse {
+    top: 98vh;
+    left: 75vw;
   }
 }
 
@@ -938,15 +942,15 @@ select {
   }
 
   #shape-orange-ellipse {
-    width: 190px;
-    height: 190px;
+    width: 290px;
+    height: 290px;
     top: 7.5vw;
     right: 20vw;
   }
   #img-property-manager,
   #img-tenants,
   #img-svc-providers {
-    width: 290px;
+    width: 420px;
     z-index: 1;
   }
 }
@@ -1142,10 +1146,10 @@ select {
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {  
   #img-bldg {
-    width: 320px;
+    width: 420px;
   }
   #shape-light-yw-ellipse {
-    width: 250px;
+    width: 350px;
     height: 250px;
     top: 2.8vw;
     right: 16vw;
@@ -1156,11 +1160,12 @@ select {
   .home-page__property-types-blurb .title {
     margin-top: 8vw;
     margin-bottom: 4vw;
-    font-size: 1.5em;
+    font-size: 1.7em;
   }
   .home-page__property-types-blurb .description {
     width: 80%;
     margin-bottom: 10vw;
+    font-size: 0.8em;
   }
 
   #shape-gray-semi-ellipse {
@@ -1173,7 +1178,14 @@ select {
     width: 150%;
   }
   .home-page__property-types-blurb img {
-    width: 350px;
+    width: 530px;
+  }
+  .box--white .title {
+    font-size: 1.3em;
+  }
+  
+  .box--white .description {
+    font-size: 0.7em;
   }
 }
 
@@ -1471,8 +1483,8 @@ select {
 @media (min-width: 576px) and (max-width: 767.98px) {  
   #shape-red-orange-ellipse {
     position: absolute;
-    top: 490vh;
-    left: 74vw;
+    top: 545vh;
+    left: 82vw;
     overflow: hidden;
     z-index: 10;
   }
@@ -1850,9 +1862,9 @@ select {
  
   #img-guy {
     position: absolute;
-    top: 53vh;
-    left: 23.5vh;
-    width: 40%;
+    top: 42vh;
+    left: 28.5vh;
+    width: 35%;
   }
   #ellipse-bg-girl {
     position: absolute;
@@ -1862,9 +1874,9 @@ select {
   }
   #ellipse-bg-guy {
     position: absolute;
-    top: 50vh;
-    left: 22vh;
-    width: 45%;
+    top: 38vh;
+    left: 27vh;
+    width: 40%;
   }
 
   .home-page__contact-us-form {
@@ -2166,7 +2178,7 @@ select {
   }
   #shape-orange-gradient-ellipse-md { 
     bottom: 60vh;
-    left: 6vw;
+    left: 10vw;
     width: 200px;
     height: 200px;
   }
@@ -2189,7 +2201,7 @@ select {
   #img-ipad-pricing {
     position: absolute;
     bottom: 0;
-    right: 25vw;
+    right: 40vw;
     top: 20vh;
     overflow: hidden;
   }
