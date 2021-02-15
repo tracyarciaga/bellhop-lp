@@ -798,29 +798,40 @@ select {
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {  
   .home-page__intro {
-    border: 1px solid orange
-  }
-  #img-bellhop-desktop {
-    background-size: contain;
-    width: 100%;
-  }
-
-  #img-bellhop-ipad {
-    top: 20em;
-    left: 48%;
-    width: 52%;
-    height: 220px;
-    background-size: 120%;
-    padding: 0;
-    margin: 0;
+    border: 1px solid blue;
   }
 
   #img-bellhop-mobile {
     position: absolute;
-    top: 20em;
-    left: 0;
-    height: 220px;
-    width: 110px; 
+    top: 17em;
+    left: 12em;
+    height: 400px;
+    width: 300px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('../img/img-bellhop-mobile.png');
+    /* background-image: -webkit-image-set( url('../img/img-bellhop-mobile.png') 1x, url('../img/img-bellhop-mobile-2x.png') 2x ); */
+  }
+  
+  #img-bellhop-ipad {
+    position: absolute;
+    height: 400px;
+    top: 18em;
+    left: 46.5em;
+    width: 400px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('../img/img-bellhop-ipad.png'); 
+  }
+  
+  #img-bellhop-desktop {
+    height: 650px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    background-image: url('../img/img-bellhop-desktop.png');
+    /* background-image: -webkit-image-set( url('../img/img-bellhop-desktop.png') 1x, url('../img/img-bellhop-desktop-2x.png') 2x ); */
   }
 }
 
@@ -857,6 +868,30 @@ select {
   and (min-resolution: 192dpi) { 
     .home-page__intro {
       border: 1px solid purple;
+    }
+
+    #img-bellhop-mobile {
+      position: absolute;
+      top: 17em;
+      left: 12em;
+      height: 400px;
+      width: 300px;
+     
+    }
+    
+    #img-bellhop-ipad {
+      position: absolute;
+      height: 400px;
+      top: 18em;
+      left: 46.5em;
+      width: 600px;
+     
+    }
+    
+    #img-bellhop-desktop {
+      height: 650px;
+      width: 100%;
+     
     }
   }
 
