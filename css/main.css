@@ -800,7 +800,11 @@ select {
 @media (min-width: 1200px) {  
   .home-page__intro {
     margin-top: 6vh;
-    border: 1px solid red;
+    border: 1px solid blue;
+  }
+
+  .home-page__intro-banner .app-download {
+    top: 8vh;
   }
 
   #img-bellhop-mobile {
@@ -837,7 +841,7 @@ select {
   }
 
   .home-page__intro-banner .pm-header {
-    top: 12vw;
+    top: 8vh;
   }
 
   .home-page__intro-banner .pv-header {
