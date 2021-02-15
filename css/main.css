@@ -551,7 +551,7 @@ select {
 
 .home-page__blurb-content .description {
   color: #FFFFFF;
-  font-size: 0.9em;
+  font-size: 0.8em;
   padding-top: 2vw;
   padding-bottom: 2vw;
   line-height: 16px;
@@ -593,7 +593,7 @@ select {
     font-size: 1.2em;
   }
   .home-page__blurb-content .description {
-    font-size: 0.9em;
+    font-size: 0.8em;
     padding-bottom: 6vw;
   }
 }
@@ -618,7 +618,7 @@ select {
     font-size: 1.2em;
   }
   .home-page__blurb-content .description {
-    font-size: 0.9em;
+    font-size: 0.8em;
     padding-bottom: 6vw;
   }
   #shape-purple-ellipse {
@@ -939,7 +939,7 @@ select {
 
 .home-page__features-blurb .description {
   color: #FFFFFF;
-  font-size: 0.9em;
+  font-size: 0.8em;
   padding-top: 2vw;
   padding-bottom: 2vw;
   line-height: 16px;
@@ -1194,7 +1194,7 @@ select {
 
 .home-page__property-types-blurb .description {
   color: #FFFFFF;
-  font-size: 0.9em;
+  font-size: 0.8em;
   padding-top: 2vw;
   padding-bottom: 2vw;
   line-height: 16px;
@@ -1334,7 +1334,7 @@ select {
   }
   .home-page__property-types-blurb .description {
     order: 2;
-    font-size: 0.9em;
+    font-size: 0.8em;
     width: 100%;
   }
 
@@ -1445,6 +1445,7 @@ select {
     flex-direction: column;
     width: 300px;
     margin: 0vw 2vw;
+    border: 1px solid white;
   }
   .home-page__property-types-blurb > img {
     order: 3;
@@ -1458,6 +1459,7 @@ select {
   #img-bldg {
     z-index: 1;
     width: 300px;
+    border: 1px solid white;
   }
   #shape-light-yw-ellipse {
     width: 90%;
@@ -1496,7 +1498,7 @@ select {
 
 .home-page__testimonials .description {
   color: #FFFFFF;
-  font-size: 0.9em;
+  font-size: 0.8em;
   padding-top: 0.5vh;
   padding-bottom: 2vw;
   line-height: 16px;
@@ -1705,7 +1707,7 @@ select {
   }
   
   .home-page__testimonials .description {
-    font-size: 0.9em;
+    font-size: 0.8em;
   }
 
   .testimonials-strip-box {
@@ -1818,7 +1820,7 @@ select {
 
 .home-page__contact-us-blurb .description {
   color: #FFFFFF;
-  font-size: 0.9em;
+  font-size: 0.8em;
   padding-top: 2vw;
   padding-bottom: 2vw;
   line-height: 16px;
@@ -2031,7 +2033,7 @@ select {
     width: 80%;
   }
   .home-page__contact-us-blurb .description {
-    font-size: 0.9em;
+    font-size: 0.8em;
     width: 80%;
   }
   .home-page__contact-us-form {
@@ -2177,7 +2179,7 @@ select {
 
 .home-page__pricing .description {
   color: #FFFFFF;
-  font-size: 0.9em;
+  font-size: 0.8em;
   padding-top: 0.5vh;
   padding-bottom: 2vw;
   line-height: 16px;
