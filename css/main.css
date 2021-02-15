@@ -1446,7 +1446,6 @@ select {
     flex-direction: column;
     width: 255px;
     margin: 0vw 2vw;
-    border: 1px solid white;
   }
   .home-page__property-types-blurb > img {
     order: 3;

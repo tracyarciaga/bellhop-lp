@@ -120,7 +120,7 @@ iframe {
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {  
   .home-page__property-types-carousel .swiper-container .swiper-button-next {
-    left: 26.5vw;
+    left: 26vw;
   }
   
 }
