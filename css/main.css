@@ -811,10 +811,14 @@ select {
     .home-page__intro {
       border: 1px solid cyan
     }
+    .intro-header-title--font {
+      font-size: 0.75em;
+    }
+    
     .intro-header-title--font .subtitle{
-      font-size: 0.70em;
+      font-size: 0.80em;
       font-weight: 100;
-      border: 1px solid cyan
+      border: 1px solid green
     }
   
  
