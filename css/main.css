@@ -800,7 +800,7 @@ select {
 @media (min-width: 1200px) {  
   .home-page__intro {
     margin-top: 6vh;
-    border: 1px solid blue;
+    border: 1px solid red;
   }
 
   .home-page__intro-banner .app-download {
@@ -845,12 +845,12 @@ select {
   }
 
   .home-page__intro-banner .pv-header {
-    left: 74vw;
+    left: 70vw;
     top: 42vh;
 
   }
   .home-page__intro-banner .tn-header {
-    left: 22vw;
+    left: 26vw;
     top: 42vh;
   }
   
