@@ -798,7 +798,7 @@ select {
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {  
   .home-page__intro {
-    margin-top: 4vh;
+    margin-top: 8vh;
     border: 1px solid red;
   }
 
@@ -834,6 +834,13 @@ select {
     background-image: url('../img/img-bellhop-desktop.png');
     /* background-image: -webkit-image-set( url('../img/img-bellhop-desktop.png') 1x, url('../img/img-bellhop-desktop-2x.png') 2x ); */
   }
+
+
+  .home-page__intro-banner .pv-header {
+    left: 70vw;
+  }
+  
+
 }
 
 /*iPad 10.5*/
