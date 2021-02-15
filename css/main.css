@@ -799,12 +799,12 @@ select {
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {  
   .home-page__intro {
-    margin-top: 6vh;
-    border: 1px solid blue;
+    margin-top: 4vh;
+    border: 1px solid red;
   }
 
   .home-page__intro-banner .app-download {
-    top: 8vh;
+    top: 12vh;
   }
 
   #img-bellhop-mobile {
@@ -831,7 +831,7 @@ select {
   }
   
   #img-bellhop-desktop {
-    height: 650px;
+    height: 600px;
     width: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -841,7 +841,7 @@ select {
   }
 
   .home-page__intro-banner .pm-header {
-    top: 8vh;
+    top: 12vh;
   }
 
   .home-page__intro-banner .pv-header {
