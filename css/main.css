@@ -850,7 +850,7 @@ select {
 
   }
   .home-page__intro-banner .tn-header {
-    left: 12vw;
+    left: 11vw;
     top: 42vh;
   }
 }
@@ -1444,7 +1444,7 @@ select {
   }
   .property-types__card--dark-gray {
     flex-direction: column;
-    width: 300px;
+    width: 280px;
     margin: 0vw 2vw;
     border: 1px solid white;
   }
@@ -1459,8 +1459,7 @@ select {
   }
   #img-bldg {
     z-index: 1;
-    width: 300px;
-    border: 1px solid white;
+    width: 280px;
   }
   #shape-light-yw-ellipse {
     width: 90%;
