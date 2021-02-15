@@ -1444,7 +1444,7 @@ select {
   }
   .property-types__card--dark-gray {
     flex-direction: column;
-    width: 265px;
+    width: 255px;
     margin: 0vw 2vw;
     border: 1px solid white;
   }
@@ -1459,7 +1459,7 @@ select {
   }
   #img-bldg {
     z-index: 1;
-    width: 265px;
+    width: 255px;
   }
   #shape-light-yw-ellipse {
     width: 85%;
