@@ -798,8 +798,8 @@ select {
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {  
   .home-page__intro {
-    margin-top: 10vh;
-    border: 1px solid red;
+    margin-top: 8vh;
+    border: 1px solid blue;
   }
 
   #img-bellhop-mobile {
@@ -818,7 +818,7 @@ select {
     position: absolute;
     height: 400px;
     top: 18em;
-    left: 46.5em;
+    left: 40em;
     width: 400px;
     background-repeat: no-repeat;
     background-size: contain;
@@ -835,6 +835,9 @@ select {
     /* background-image: -webkit-image-set( url('../img/img-bellhop-desktop.png') 1x, url('../img/img-bellhop-desktop-2x.png') 2x ); */
   }
 
+  .home-page__intro-banner .pm-header {
+    top: 18vw;
+  }
 
   .home-page__intro-banner .pv-header {
     left: 70vw;
