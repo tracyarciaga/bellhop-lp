@@ -1893,8 +1893,9 @@ and (min-resolution: 192dpi) {
   color:#6F654C;
 }
 
-.form-row .checkbox-label {
+.checkbox-label {
   margin-bottom: 0;
+
 }
 
 .form-row input[type='text'], .form-row textarea   {
@@ -1906,16 +1907,16 @@ and (min-resolution: 192dpi) {
   font-size: 14px;
   resize: none;
 }
-/* 
-.form-row input[type='checkbox']  {
-  display: inline;
-  background-color: #F8F7F7;
-  border: 1px solid #D6D9DC;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -o-appearance: none;
 
+/* .checkbox-label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+  
 } */
+
 
 .form-row button {
   margin-top: 20px;
@@ -1934,7 +1935,7 @@ and (min-resolution: 192dpi) {
 .form-row label {
   margin-top: 20px;
   margin-bottom: 10px;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 #img-girl {
