@@ -820,6 +820,11 @@ select {
       font-weight: 100;
       border: 1px solid green
     }
+
+    .home-page__intro-banner .pv-header {
+      top: 41vw;
+      left: 70vw;
+    }
  
   }
 
