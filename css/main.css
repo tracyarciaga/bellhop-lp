@@ -800,7 +800,7 @@ select {
 @media (min-width: 1200px) {  
   .home-page__intro {
     margin-top: 6vh;
-    border: 1px solid red;
+    border: 1px solid blue;
   }
 
   .home-page__intro-banner .app-download {
@@ -850,11 +850,9 @@ select {
 
   }
   .home-page__intro-banner .tn-header {
-    left: 26vw;
+    left: 18vw;
     top: 42vh;
   }
-  
-
 }
 
 /*iPad 10.5*/
