@@ -798,8 +798,8 @@ select {
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {  
   .home-page__intro {
-    margin-top: 8vh;
-    border: 1px solid blue;
+    margin-top: 10vh;
+    border: 1px solid red;
   }
 
   #img-bellhop-mobile {
