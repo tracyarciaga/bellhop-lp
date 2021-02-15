@@ -799,7 +799,7 @@ select {
 @media (min-width: 1200px) {  
   .home-page__intro {
     margin-top: 8vh;
-    border: 1px solid red;
+    border: 1px solid blue;
   }
 
   #img-bellhop-mobile {
@@ -875,6 +875,7 @@ select {
   and (-webkit-min-device-pixel-ratio: 2)
   and (min-resolution: 192dpi) { 
     .home-page__intro {
+      margin-top: 0vh;
       border: 1px solid purple;
     }
 
