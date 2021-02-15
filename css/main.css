@@ -799,8 +799,8 @@ select {
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {  
   .home-page__intro {
-    margin-top: 4vh;
-    border: 1px solid blue;
+    margin-top: 6vh;
+    border: 1px solid red;
   }
 
   .home-page__intro-banner .app-download {
@@ -1440,7 +1440,7 @@ select {
   }
   .property-types__card--dark-gray {
     flex-direction: column;
-    width: 320px;
+    width: 300px;
     margin: 0vw 2vw;
   }
   .home-page__property-types-blurb > img {
@@ -1454,7 +1454,7 @@ select {
   }
   #img-bldg {
     z-index: 1;
-    width: 320px;
+    width: 300px;
   }
   #shape-light-yw-ellipse {
     width: 90%;
