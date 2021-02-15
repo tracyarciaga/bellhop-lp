@@ -738,9 +738,8 @@ select {
 
   .home-page__intro-banner .tn-header {
     top: 32vw;
-    left: 7.5vw;
+    left: 7vw;
     z-index: 2;
-    border: 1px solid white;
   }
   
   .tn-header > img {
@@ -812,6 +811,12 @@ select {
     .home-page__intro {
       border: 1px solid cyan
     }
+    .intro-header-title--font .subtitle{
+      font-size: 0.70em;
+      font-weight: 100;
+      border: 1px solid cyan
+    }
+  
  
   }
 
