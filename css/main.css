@@ -353,7 +353,7 @@ select {
   }
 
   .subtitle{
-    font-size: 0.5em;
+    font-size: 0.8em;
     font-weight: 100;
   }
 
@@ -722,7 +722,6 @@ select {
 @media (min-width: 992px) and (max-width: 1199.98px) {  
   .home-page__intro {
     margin-top: 4vh;
-    border: 1px solid white;
   }
 
   #img-bellhop-ipad {
@@ -888,7 +887,6 @@ select {
   and (min-resolution: 192dpi) { 
     .home-page__intro {
       margin-top: 0vh;
-      border: 1px solid purple;
     }
 
     #img-bellhop-mobile {
@@ -1619,7 +1617,7 @@ and (min-resolution: 192dpi) {
 
   #shape-yellow-orange-ellipse { 
     left: -1.8vh;
-    top: 65vh;
+    top: 62vh;
     z-index: 2;
     width: 55px;
   }
