@@ -799,7 +799,6 @@ select {
 @media (min-width: 1200px) {  
   .home-page__intro {
     margin-top: 6vh;
-    border: 1px solid red;
   }
 
   .home-page__intro-banner .app-download {
