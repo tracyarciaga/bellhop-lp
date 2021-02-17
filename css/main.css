@@ -859,9 +859,6 @@ select {
   and (max-device-width: 834px) 
   and (orientation: portrait) 
   and (-webkit-min-device-pixel-ratio: 2) {
-    .home-page__intro {
-      border: 1px solid cyan
-    }
     .intro-header-title--font {
       font-size: 0.75em;
     }
